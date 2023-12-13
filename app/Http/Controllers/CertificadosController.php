@@ -16,10 +16,14 @@ class CertificadosController extends Controller
             "vchdoccodigo" => $request->VCHDOCCODIGO,
             "vchlotcodigo" => $request->VCHLOTCODIGO,
             "vchcurdescripcion" => $request->VCHCURDESCRIPCION,
-            "vchcersolicitante" => $request->VCHCERSOLICITANTE
+            "vchcersolicitante" => $request->VCHCERSOLICITANTE,
+            "vchviadescripcion" => $request->VCHTVIDESCRIPCION,
+            "datfechadesde" => $request->DATFECHADESDE,
+            "datfechahasta" => $request->DATFECHAHASTA
         ];
 
-        $url = "http://192.0.0.57/pruebasPIDEMSS/servicios/numeracion/lCert?entidad=201&sistema=609&key=400";
+
+        $url = "http://192.0.0.57/pruebasPIDEMSS/servicios/numeracion/l2Cert?entidad=201&sistema=609&key=400";
         // $url = "172.16.2.28:8070/pidemss/servicios/numeracion/lCert?entidad=201&sistema=609&key=400";
 
         try {
